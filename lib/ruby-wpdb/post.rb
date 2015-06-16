@@ -48,7 +48,6 @@ module WPDB
     def validate
       super
       validates_presence [:post_title, :post_type, :post_status]
-      validates_unique :post_name
     end
 
     def before_validation
